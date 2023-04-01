@@ -1,9 +1,9 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Logo from '../../public/img/izaron_logo.png';
 import { DropdownActividades } from '../dropdownActividades/dropdownActividades';
 import './navbar.css';
 export const Navbar = () => {
-
+    const [activeIndex, setActiveIndex] = useState(null);
     const toggleButtonRef = useRef(null);
     const navWrapperRef = useRef(null);
 
@@ -19,6 +19,7 @@ export const Navbar = () => {
         }
     };
 
+   
     return (
         <>
             <div className='navbar__main-content'>
@@ -46,7 +47,7 @@ export const Navbar = () => {
                             <a>
                                 Actividades
                             </a>
-                            <ul>
+                            <ul >
                                 <li>
                                     <a>
                                         Juegos del Mundo
