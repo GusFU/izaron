@@ -1,0 +1,22 @@
+
+html{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 0;
+
+  }
+  .sliderimgContainer{
+   
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  img{
+    width: 100%;
+    height: 200px;
+  
+  }
+  .slick-prev:before, .slick-next:before{
+   
+    color: black !important;
+  }
