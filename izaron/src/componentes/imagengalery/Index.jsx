@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './imagenGallery.css';
+import './index.css';
 
 export const ImageGallery = () => {
   const images = Object.values(
@@ -22,7 +22,7 @@ export const ImageGallery = () => {
   };
 
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className='sliderContainer'>
       {images.map((image, index) => (
         <div key={index}>
           <img className='carrousel__images' src={image.default} alt={`image-${index}`} />

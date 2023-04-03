@@ -1,5 +1,5 @@
 import React from 'react'
-import './cardsDescription.css';
+import './index.css';
 import { ToyAnimation } from '../toyAnimation/ToyAnimation';
 
 export const CardsDescription = ({ renderCard, text }) => {
@@ -7,7 +7,7 @@ export const CardsDescription = ({ renderCard, text }) => {
     return (
         <div className='home__card-content'>
 
-        <div className='home__card-description1'>
+        <div className='home__card-description'>
             <p>Irazón es una alternativa atractiva y diferente de ocio y 
             entretenimiento para toda clase de colectivos y edades. 
             <br /><br />
@@ -17,7 +17,7 @@ export const CardsDescription = ({ renderCard, text }) => {
             a lo largo de los años hemos ido perdiendo.</p>
         </div>
         <ToyAnimation />
-        <div className='home__card-description2'>
+        <div className='home__card-description'>
             <p>Nuestros eventos están destinados a toda clase de colectivos y edades:
             <br/><br /></p>
             <ul>

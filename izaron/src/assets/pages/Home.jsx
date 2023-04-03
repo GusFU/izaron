@@ -1,18 +1,12 @@
-import React from 'react';
-import { Navbar } from '../../componentes/navbar/Navbar';
-import { CardsDescription } from '../../componentes/cardsDescription/CardsDescription';
-import { ImageGallery } from '../../componentes/imagengalery/ImagenGallery';
-import './home.css';
-export const Home = ({ text }) => {
+import { CardsDescription } from '../../componentes/cardsDescription/Index';
+import { ImageGallery } from '../../componentes/imagengalery/Index';
 
+export const Home = ()=>{
 
-  return (
-    <div>
-      <Navbar />
-      <div className='home__body'>
-        <ImageGallery />
+    return (
+        <div className="home__body">
+            <ImageGallery />
         <CardsDescription />
-      </div>
-    </div>
-  );
-};
+        </div>
+    )
+}
