@@ -1,0 +1,15 @@
+.home__body{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: auto;
+  left: 0;
+  margin: 0 auto;
+  margin-top: 20%;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 90vw;
+  z-index: 1;
+}

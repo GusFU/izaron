@@ -1,0 +1,10 @@
+
+.home__card-description1,
+.home__card-description2 {
+  background-color: #ab9470;
+  border-radius: 4px;
+  line-height: 2;
+  margin-top: 20%;
+  padding: 8px;
+  text-align: justify;
+}
