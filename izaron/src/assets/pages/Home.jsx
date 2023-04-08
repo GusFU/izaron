@@ -1,7 +1,7 @@
 import { CardsDescription } from '../../componentes/cardsDescription/Index';
 import { ImageGallery } from '../../componentes/imagengalery/Index';
 import { ToyAnimation } from '../../componentes/toyAnimation/Index'
-
+import "principal.css"
 export const Home = () => {
     const images = Object.values(
         import.meta.globEager('../../public/imagesCarrousel/' +'*'+'.{png,jpg,jpeg,gif,svg,jfif}')

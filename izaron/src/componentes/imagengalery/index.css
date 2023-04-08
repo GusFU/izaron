@@ -1,30 +1,51 @@
-.sliderContainer{
+@font-face {
+  font-family: "CabinSketch";
+  src: url("../../assets/fonts/CabinSketch-Regular.ttf");
+  src: url("../../assets/fonts/CabinSketch-Bold.ttf");
+}
+.sliderContainer {
   margin: 20px;
 }
-.sliderimgContainer{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-  .carrousel__images{
-    height: 200px;
-    width: 100%;
-    z-index: 1;
-   
-  
-  }
-  .slick-prev:before, .slick-next:before{
-   
-    color: black ;
-  }
-.parCarrousel{
-  position: absolute;
-  color: black;
-  z-index: 100;
-  width: 100px;
+
+.sliderimgContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
-.carrouselContent{
-  position: relative;
-  
+
+.carrousel__images {
+  height: 200px;
+  width: 100%;
+  z-index: 1;
+
+
+}
+
+.slick-prev:before,
+.slick-next:before {
+
+  color: black;
+}
+
+.parCarrousel {
+  position: absolute;
+  bottom: 45%;
+  margin-left: 1%;
  
+z-index: 600;
+
+}
+
+
+
+.parCarrousel p {
+  font-family: "CabinSketch";
+  font-size: 20px;
+  word-wrap: break-word;
+
+  width: 50%;
+  color: white;
+  
+
+
 }
