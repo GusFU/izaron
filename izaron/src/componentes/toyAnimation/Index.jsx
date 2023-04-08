@@ -1,6 +1,6 @@
 import React,  { useState, useRef, useEffect } from 'react';
 import VintageToy from '../../public/img/vintage_toy.png'
-import './toyAnimation.css';
+import './index.css';
 
 export const ToyAnimation = () => {
     const [ toyVisible, setToyVisible ] = useState(false);

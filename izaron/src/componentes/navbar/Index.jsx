@@ -2,12 +2,11 @@ import React, { useRef, useState } from 'react';
 import Logo from '../../public/img/izaron_logo.png';
 import { useDispatch, useSelector } from 'react-redux'
 import { selectPagina } from "../../store/slices/paginas";
-import './navbar.css';
+import './index.css';
 
 
 export const Navbar = () => {
     const dispatch = useDispatch();
-    const [activeIndex, setActiveIndex] = useState(null);
     const toggleButtonRef = useRef(null);
     const navWrapperRef = useRef(null);
 
@@ -43,31 +42,31 @@ export const Navbar = () => {
                 <div className='nav-links'>
                     <ul>
                         <li>
-                            <a>
+                        <a onClick={()=> dispatch( selectPagina('SobreIzaron'))}>
                                 Sobre Irazón
                             </a>
                         </li>
                         <li>
-                            <a>
+                        <a onClick={()=> dispatch( selectPagina('Actividades'))}>
                                 Actividades
                             </a>
                             <ul >
-                                <li>
+                                <li className='liActividades'>
                                     <a onClick={()=> dispatch( selectPagina('JuegosDelMundo'))}>
                                         Juegos del Mundo
                                     </a>
                                 </li>
-                                <li>
+                                <li className='liActividades'>
                                     <a onClick={()=> dispatch( selectPagina('IzaronIngenio'))}>
                                         Irazón, Ingenio
                                     </a>
                                 </li>
-                                <li>
+                                <li className='liActividades'>
                                     <a onClick={()=> dispatch( selectPagina('LadrillosDeCarton'))}>
                                         Ladrillos de cartón
                                     </a>
                                 </li>
-                                <li>
+                                <li className='liActividades'>
                                     <a onClick={()=>dispatch( selectPagina('TablitasMagicas'))}>
                                         Tablitas Mágicas
                                     </a>

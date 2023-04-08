@@ -3,7 +3,12 @@
   background-color: #ab9470;
   border-radius: 4px;
   line-height: 2;
-  margin-top: 20%;
+  margin-top: 15px;
   padding: 8px;
-  text-align: justify;
+  
+
+}
+
+.parrafoCardsDescription{
+  margin: auto;
 }

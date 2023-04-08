@@ -13,3 +13,28 @@
   width: 90vw;
   z-index: 1;
 }
+h1{
+  color: black;
+}
+.sobreIzaron{
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: auto;
+  left: 0;
+  margin: 0 auto;
+  margin-top: 20%;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 90vw;
+  z-index: 1;
+}
+.sobreIzaron .h1{
+  color: #ab9470;
+}
+.sobreIzaron span{
+  color: black;
+}

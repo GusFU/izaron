@@ -1,18 +1,25 @@
 .navbar__main-content {
+  
   align-items: center;
   display: flex;
   flex-direction: row;
-  height: 90px;
-  position: relative;
-  width: 100vw;
+  height: 120px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+  border-bottom: solid 4px #ab947099;
+
 }
 .navbar__logo-content {
   margin-left: 10%;
   width: 50%;
 }
 .navbar__logo-content img {
-  height: 50px;
-  width: 120px;
+  height: 100%;
+  width: 100%;
 }
 .navbar__menu-content {
   align-items: center;
@@ -27,6 +34,8 @@
   margin-top: -200%;
   max-height: 0;
   overflow: hidden;
+  z-index: 99;
+
   padding: 20px;
   transform: translateY(-50%);
   transition: max-height 0.5s ease-out;
@@ -35,14 +44,15 @@
 .main-nav.show {
   background-color: #f9f9f9;
   left: 0;
+  top: 100px;
   margin: 0 auto;
   margin-top: 0;
   max-height: 500px; /* Un valor suficientemente grande */
-  position: absolute;
+  position: fixed;
   right: 0;
   transform: translateY(0%);
   transition: max-height 0.5s ease-in;
-  z-index: 300;
+  z-index: 98;
 }
 .menu-list-container.close {
   max-height: 0;
@@ -63,9 +73,14 @@
   left: 0;
   padding: 10px 0 10px 20px;
 }
+.liActividades{
+  list-style: lower-roman !important;
+  margin-left: 10px !important;
+}
 
 .nav-links ul ul li a {
   font-size: 18px !important;
+  
 }
 .nav-links a {
   cursor: pointer;
@@ -100,11 +115,13 @@
 .button-menu.close span {
   background: #ab947099;
   opacity: 1;
-  transform: rotate(45deg) translate(0px, 0px);
+  transform: rotate(-45deg) translate(8px, -1px);
 }
 .button-menu.close span:nth-child(2) {
-  transform: rotate(-45deg) translate(-8px, 5px);
+  display: none;
 }
 .button-menu.close span:nth-child(3) {
-  display: none;
+  
+transform: rotate(45deg) translate(8px, 1px);
+
 }

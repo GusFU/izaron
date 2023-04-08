@@ -11,7 +11,7 @@ export const ImageGallery = () => {
   
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -22,6 +22,7 @@ export const ImageGallery = () => {
   };
 
   return (
+    
     <Slider {...settings} className='sliderContainer'>
       {images.map((image, index) => (
         <div key={index}>
