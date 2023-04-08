@@ -10,7 +10,7 @@ export const ImageGallery = ({imagenes,parrafo,settings}) => {
   const parrafos1 = {
    carrousel_1: "dasdasdasdasdasdlkajsdlakjsd",
   carrousel_2: "jnkjfhgkjhkdfjhgkjfhgkjh",
-  carrousel_3: "ppppppppppppppppppppppppppppp"
+  carrousel_3: "ppppppppppppppppppppppppppppppppppppppp"
   }
 
   return (
@@ -18,8 +18,11 @@ export const ImageGallery = ({imagenes,parrafo,settings}) => {
     <Slider {...settings} className='sliderContainer'>
       {imagenes.map((image, index) => (
         <div className='carrouselContent' key={index}>
+        
           <img className='carrousel__images' src={image.default} alt={`image-${index}`} />
-         <p className='parCarrousel'>{parrafos1[image.default.split('/').splice(-1)[0].split(".")[0]]}</p>
+          <div className='parCarrousel'>
+         <p >{parrafos1[image.default.split('/').splice(-1)[0].split(".")[0]]}</p>
+         </div>
         </div>
       ))}
     </Slider>

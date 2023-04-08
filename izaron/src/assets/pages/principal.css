@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "CabinSketch";
+  src: url("../fonts/CabinSketch.ttf");
+  src: url("../fonts/CabinSketch.ttf");
+}
 .home__body{
   color: white;
   display: flex;
