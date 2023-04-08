@@ -9,10 +9,22 @@
   .carrousel__images{
     height: 200px;
     width: 100%;
+    z-index: 1;
+   
   
   }
   .slick-prev:before, .slick-next:before{
    
-    color: black !important;
+    color: black ;
   }
-
+.parCarrousel{
+  position: absolute;
+  color: black;
+  z-index: 100;
+  width: 100px;
+}
+.carrouselContent{
+  position: relative;
+  
+ 
+}

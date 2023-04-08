@@ -4,29 +4,22 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './index.css';
 
-export const ImageGallery = () => {
-  const images = Object.values(
-    import.meta.globEager('../../public/imagesCarrousel/' +'*'+'.{png,jpg,jpeg,gif,svg,jfif}')
-  );
+export const ImageGallery = ({imagenes,parrafo,settings}) => {
+ 
   
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplaySpeed:3000,
-    autoplay: true,
-    
-  };
+  const parrafos1 = {
+   carrousel_1: "dasdasdasdasdasdlkajsdlakjsd",
+  carrousel_2: "jnkjfhgkjhkdfjhgkjfhgkjh",
+  carrousel_3: "ppppppppppppppppppppppppppppp"
+  }
 
   return (
     
     <Slider {...settings} className='sliderContainer'>
-      {images.map((image, index) => (
-        <div key={index}>
+      {imagenes.map((image, index) => (
+        <div className='carrouselContent' key={index}>
           <img className='carrousel__images' src={image.default} alt={`image-${index}`} />
+         <p className='parCarrousel'>{parrafos1[image.default.split('/').splice(-1)[0].split(".")[0]]}</p>
         </div>
       ))}
     </Slider>

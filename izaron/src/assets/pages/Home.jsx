@@ -3,10 +3,23 @@ import { ImageGallery } from '../../componentes/imagengalery/Index';
 import { ToyAnimation } from '../../componentes/toyAnimation/Index'
 
 export const Home = () => {
-
+    const images = Object.values(
+        import.meta.globEager('../../public/imagesCarrousel/' +'*'+'.{png,jpg,jpeg,gif,svg,jfif}')
+      );
+      const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed:5000,
+        autoplay: true,
+        useCSS: true,
+        
+      };
     return (
         <div className="home__body">
-            <ImageGallery />
+            <ImageGallery imagenes= {images} parrafo ="hola" settings={settings}/>
             <CardsDescription >
                 <p className='parrafoCardsDescription'>Irazón es una alternativa atractiva y diferente de ocio y
                     entretenimiento para toda clase de colectivos y edades.
